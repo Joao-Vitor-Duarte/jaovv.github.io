@@ -1,0 +1,12 @@
+ div.link{
+      position:relative;
+      left:300px;
+      top:15px;
+      bottom:15px;
+      float: left;
+      width: 100px;
+      background-color:#2E77FE;
+      width:100px;
+      text-align:center;
+      margin-left:70px;
+    }
