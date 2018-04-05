@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>	
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="luz.css">
   <script>
     var a;
@@ -10,14 +11,54 @@
     function desliga(){
     document.getElementById("luz1").src ="imagens/Loff.png"
     }
+       function liga2(){
+    document.getElementById("luz2").src ="imagens/Lon.png" 
+    }
+    function desliga2(){
+    document.getElementById("luz2").src ="imagens/Loff.png"
+    }
+       function liga3(){
+    document.getElementById("luz3").src ="imagens/Lon.png" 
+    }
+    function desliga3(){
+    document.getElementById("luz3").src ="imagens/Loff.png"
+    }
+       function liga4(){
+    document.getElementById("luz4").src ="imagens/Lon.png" 
+    }
+    function desliga4(){
+    document.getElementById("luz4").src ="imagens/Loff.png"
+    }  function ligaTUDO(){
+    document.getElementById("luz1").src ="imagens/Lon.png"
+    document.getElementById("luz2").src ="imagens/Lon.png"
+    document.getElementById("luz3").src ="imagens/Lon.png"
+    document.getElementById("luz4").src ="imagens/Lon.png"
+    }
+    function desligaTUDO(){
+    document.getElementById("luz1").src ="imagens/Loff.png"
+    document.getElementById("luz2").src ="imagens/Loff.png"
+    document.getElementById("luz3").src ="imagens/Loff.png"
+    document.getElementById("luz4").src ="imagens/Loff.png"
+    }
     
   </script>
 </head>
 <body>
 <p id="result">resultado</p>
-‪<img src="imagens/Loff.png" id="luz1"><br>
-<button type="button" onclick="liga()">Liga</button>
-<button type="button" onclick="desliga()">desliga</button>
+‪<button type="button" onclick="ligaTUDO()">Liga Tudo</button>
+<button type="button" onclick="desligaTUDO()">desliga Tudo</button><br>
+<img src="imagens/Loff.png" id="luz1"> 
+<img src="imagens/Loff.png" id="luz2"><br>
+<button type="button" onclick="liga()">Liga Sala</button>
+<button type="button" onclick="desliga()">desliga Sala</button>
+<button type="button" onclick="liga2()">Liga Quarto</button>
+<button type="button" onclick="desliga2()">desliga Quarto</button><br>
+‪<img src="imagens/Loff.png" style="width:100px;height:180px;padding-right:100px;"id="luz3"> 
+<img src="imagens/Loff.png" style="width:100px;height:180px;padding-right:100px;" id="luz4"><br>
+<button type="button" onclick="liga3()">Liga Cozinha</button>
+<button type="button" onclick="desliga3()">desliga Cozinha</button>
+<button type="button" onclick="liga4()">Liga Banheiro</button>
+<button type="button" onclick="desliga4()">desliga Banheiro</button><br>
 <a href="exercicios.html">Lista</a>
 </body>
 </html>
